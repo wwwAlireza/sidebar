@@ -1,0 +1,56 @@
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  width: 70px;
+  background-color: #252629;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: width .6s;
+  transition: width .6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.sidebar-container:hover {
+  width: 220px;
+}
+
+.sidebar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 150px;
+  background-color: transparent;
+  padding: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.sidebar-item .sidebar-title {
+  color: #fff;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.sidebar-item:hover .sidebar-title {
+  color: #d63384;
+}
+
+.sidebar-item:hover .sidebar-icon {
+  -webkit-transition: stroke .2s;
+  transition: stroke .2s;
+  stroke: #d63384;
+}
+/*# sourceMappingURL=mainStyle.css.map */
